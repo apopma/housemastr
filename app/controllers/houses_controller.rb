@@ -1,8 +1,8 @@
 class HousesController < ApplicationController
   def show
 
-    search_params = params.select do
-      |param| param.start_with?("min") || param.start_with?("max")
+    search_params = params.select do |param|
+      param.start_with?("min") || param.start_with?("max")
     end
 
     @houses = House.none
