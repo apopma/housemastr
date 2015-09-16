@@ -7,8 +7,8 @@ class CreateHouses < ActiveRecord::Migration
       t.integer :bedrooms, null: false
       t.integer :bathrooms, null: false
       t.integer :sq_ft, null: false
-      t.float :lat, null: false
-      t.float :lng, null: false
+      t.float :latitude, null: false
+      t.float :longitude, null: false
       t.timestamps null: false
     end
   end
