@@ -11,5 +11,10 @@ class CreateHouses < ActiveRecord::Migration
       t.float :longitude, null: false
       t.timestamps null: false
     end
+    
+    add_index :houses, [
+      :street, :status, :price, :bedrooms, :bathrooms,
+      :sq_ft, :latitude, :longitude
+    ], unique: true, name: "no_duplicate_records"
   end
 end

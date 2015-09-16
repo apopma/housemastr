@@ -29,4 +29,6 @@ ActiveRecord::Schema.define(version: 20150916175651) do
     t.datetime "updated_at", null: false
   end
 
+  add_index "houses", ["street", "status", "price", "bedrooms", "bathrooms", "sq_ft", "latitude", "longitude"], name: "no_duplicate_records", unique: true, using: :btree
+
 end
