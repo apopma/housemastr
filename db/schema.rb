@@ -23,8 +23,8 @@ ActiveRecord::Schema.define(version: 20150916175651) do
     t.integer  "bedrooms",                             null: false
     t.integer  "bathrooms",                            null: false
     t.integer  "sq_ft",                                null: false
-    t.decimal  "latitude",   precision: 16, scale: 15
-    t.decimal  "longitude",  precision: 17, scale: 16
+    t.decimal  "lat",        precision: 16, scale: 15
+    t.decimal  "lng",        precision: 17, scale: 16
     t.datetime "created_at",                           null: false
     t.datetime "updated_at",                           null: false
   end
